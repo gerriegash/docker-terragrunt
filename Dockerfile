@@ -1,4 +1,4 @@
-FROM hashicorp/terraform:latest
+FROM hashicorp/terraform:0.11.13
 RUN apk add --no-cache bash git jq grep
 RUN apk -v --update add \
         python \
