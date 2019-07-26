@@ -10,7 +10,7 @@ RUN apk -v --update add \
         npm \
         && \
     npm install --save markdown-toc && \
-    pip install --upgrade awscli==1.14.5 s3cmd==2.0.1 python-magic && \
+    pip install --upgrade awscli==1.16.200 s3cmd==2.0.1 python-magic && \
     apk -v --purge del py-pip && \
     rm /var/cache/apk/*
 ADD https://github.com/gruntwork-io/terragrunt/releases/download/v0.16.11/terragrunt_linux_amd64 /usr/local/bin/terragrunt
